@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{CEF96231-0AFF-464F-92C9-08E14605B0C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{26A8E5ED-B820-4615-84FD-44436D63BDBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63382319-5C45-4D90-80E5-A265072EF599}"
+	ProjectSection(SolutionItems) = preProject
+		Corvalius.Anubis.vsmdi = Corvalius.Anubis.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corvalius.Common.Test", "Source\Corvalius.Common.Test\Corvalius.Common.Test.csproj", "{7F81E31E-7971-4FB6-9680-0E1CE83EFB25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corvalius.Common.Portable", "Source\Corvalius.Common.Portable\Corvalius.Common.Portable.csproj", "{380ACFF6-624B-4CB6-812F-5820DA4C1D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corvalius.Common.Net45", "Source\Corvalius.Common.Net45\Corvalius.Common.Net45.csproj", "{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F81E31E-7971-4FB6-9680-0E1CE83EFB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F81E31E-7971-4FB6-9680-0E1CE83EFB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F81E31E-7971-4FB6-9680-0E1CE83EFB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F81E31E-7971-4FB6-9680-0E1CE83EFB25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380ACFF6-624B-4CB6-812F-5820DA4C1D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380ACFF6-624B-4CB6-812F-5820DA4C1D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380ACFF6-624B-4CB6-812F-5820DA4C1D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380ACFF6-624B-4CB6-812F-5820DA4C1D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F81E31E-7971-4FB6-9680-0E1CE83EFB25} = {CEF96231-0AFF-464F-92C9-08E14605B0C3}
+		{380ACFF6-624B-4CB6-812F-5820DA4C1D03} = {CEF96231-0AFF-464F-92C9-08E14605B0C3}
+		{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1} = {CEF96231-0AFF-464F-92C9-08E14605B0C3}
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 03bffe0a-72c2-4bfc-9443-c3ef967c308b
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Corvalius.Anubis.vsmdi
+	EndGlobalSection
+EndGlobal

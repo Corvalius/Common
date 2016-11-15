@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>Corvalius</authors>
+    <owners>Corvalius</owners>
+    <projectUrl>http://hg.corvalius.com/Anubis</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Corvalius Common (also known as Anubis) is a repository of interesting routines and functionality.</description>   
+    <copyright>Copyright Corvalius 2013</copyright>
+    <tags>assorted</tags>
+  </metadata>
+</package>

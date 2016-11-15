@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2A1A764E-CFC5-43D6-A5FD-F233E21BA6F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Corvalius</RootNamespace>
+    <AssemblyName>corvalius-common-net45</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <RestorePackages>true</RestorePackages>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>../../GlobalKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\DependencyList.cs">
+      <Link>Collections\DependencyList.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\DependencyListNode.cs">
+      <Link>Collections\DependencyListNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\IImmutableList.cs">
+      <Link>Collections\IImmutableList.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\IImmutableQueue.cs">
+      <Link>Collections\IImmutableQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\IImmutableStack.cs">
+      <Link>Collections\IImmutableStack.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\ImmutableExtensions.cs">
+      <Link>Collections\ImmutableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\ImmutableQueue.cs">
+      <Link>Collections\ImmutableQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\ImmutableStack.cs">
+      <Link>Collections\ImmutableStack.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Collections\LazyList.cs">
+      <Link>Collections\LazyList.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\ExportBootstrapperTaskAttribute.cs">
+      <Link>Composition\ExportBootstrapperTaskAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\IBootstrapperTask.cs">
+      <Link>Composition\IBootstrapperTask.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\ICompositionContainerFactory.cs">
+      <Link>Composition\ICompositionContainerFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\IDependencyResolver.cs">
+      <Link>Composition\IDependencyResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\INamedDependencyMetadata.cs">
+      <Link>Composition\INamedDependencyMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\INamedMetadata.cs">
+      <Link>Composition\INamedMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Composition\IOrderedMetadata.cs">
+      <Link>Composition\IOrderedMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\DebuggingHelper.cs">
+      <Link>DebuggingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\DisposableObject.cs">
+      <Link>DisposableObject.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\CollectionExtensions.cs">
+      <Link>Extensions\CollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\DateTimeExtensions.cs">
+      <Link>Extensions\DateTimeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\DateTimeOffsetExtensions.cs">
+      <Link>Extensions\DateTimeOffsetExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\EnumerableExtensions.cs">
+      <Link>Extensions\EnumerableExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\ExceptionExtensions.cs">
+      <Link>Extensions\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\LinqExtensions.cs">
+      <Link>Extensions\LinqExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\NumericExtensions.cs">
+      <Link>Extensions\NumericExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\ReflectionExtensions.cs">
+      <Link>Extensions\ReflectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\SeriesExtensions.cs">
+      <Link>Extensions\SeriesExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\SystemExtensions.cs">
+      <Link>Extensions\SystemExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Extensions\TimeSpanExtensions.cs">
+      <Link>Extensions\TimeSpanExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common.Portable\Filter.cs">
+      <Link>Filter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Collections\ObservableConcurrentDictionary.cs">
+      <Link>Collections\ObservableConcurrentDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Collections\ObservableHashSet.cs">
+      <Link>Collections\ObservableHashSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\BoolToVisibilityConverter.cs">
+      <Link>Converters\BoolToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\ByteArrayToStringConverter.cs">
+      <Link>Converters\ByteArrayToStringConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\EnumToBooleanConverter.cs">
+      <Link>Converters\EnumToBooleanConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\EnumToVisibilityConverter.cs">
+      <Link>Converters\EnumToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\FormattedDateConverter.cs">
+      <Link>Converters\FormattedDateConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\InvertedBoolToVisibilityConverter.cs">
+      <Link>Converters\InvertedBoolToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\IsNullConverter.cs">
+      <Link>Converters\IsNullConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\MoneyConverter.cs">
+      <Link>Converters\MoneyConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\NegativeBooleanConverter.cs">
+      <Link>Converters\NegativeBooleanConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\NegativeVisibilityConverter.cs">
+      <Link>Converters\NegativeVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\ObjectToBoolConverter.cs">
+      <Link>Converters\ObjectToBoolConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\ObjectToVisibilityConverter.cs">
+      <Link>Converters\ObjectToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\RelativeDateTimeConverter.cs">
+      <Link>Converters\RelativeDateTimeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Converters\UriToImageConverter.cs">
+      <Link>Converters\UriToImageConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Dynamic\DynamicRegistryKey.cs">
+      <Link>Dynamic\DynamicRegistryKey.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Dynamic\DynamicXElement.cs">
+      <Link>Dynamic\DynamicXElement.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Extensions\ConverterExtensions.cs">
+      <Link>Extensions\ConverterExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Extensions\DependencyObjectExtensions.cs">
+      <Link>Extensions\DependencyObjectExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Extensions\SecurityExtensions.Net4.cs">
+      <Link>Extensions\SecurityExtensions.Net4.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Extensions\StreamExtensions.cs">
+      <Link>Extensions\StreamExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Extensions\TypeExtensions.cs">
+      <Link>Extensions\TypeExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\Extensions\XmlExtensions.cs">
+      <Link>Extensions\XmlExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Corvalius.Common\PerThreadRandom.cs">
+      <Link>PerThreadRandom.cs</Link>
+    </Compile>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Binary\Bits.cs" />
+    <Compile Include="Binary\BitVector.cs" />
+    <Compile Include="Composition\DependencyResolver.cs" />
+    <Compile Include="Composition\DependencyResolverExtensions.cs" />
+    <Compile Include="Composition\DesktopBootstrapper.cs" />
+    <Compile Include="Composition\DesktopDependencyResolver.cs" />
+    <Compile Include="Extensions\EnumerationExtensions.cs" />
+    <Compile Include="Hashing.cs" />
+    <Compile Include="Hashing.Streamed.cs" />
+    <Compile Include="Memory.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnmanagedMemory.Windows.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
