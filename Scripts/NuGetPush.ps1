@@ -1,6 +1,6 @@
 Param(
   [string]$Stable="yes",  
-  [string]$Development="no"  
+  [string]$Development="no"
 )
 
 Push-Location $PSScriptRoot
@@ -10,6 +10,7 @@ Push-Location $PSScriptRoot
 # Move to the parent (SolutionDir).
 Push-Location ..
 
+## We still have not published it through Nuget on this commit, but we will do so in the very near future. 
 $nuGetGalleryServer = "https://www.myget.org/F/corvalius/api/v2/package"
 $nugetApiKey = "YOUR-API-KEY-HERE"
 $nugetExecutable = Get-ChildItem "NuGet.exe" -Recurse | Select -First 1 
@@ -56,20 +57,20 @@ foreach( $spec in $nuspecFiles )
             Del *.nupkg
 
             # Build the package.		
-			$projectFile = $spec.BaseName + ".csproj"		
-			
-			if ($Stable -eq "yes")
-			{
-				Execute-NuGet pack $projectFile -Symbols -Build -Version $buildNumber
-			}
-			elseif ($Development -eq "no")
-			{
-				Execute-NuGet pack $projectFile -Symbols -Build -Version "$buildNumber-prerelease"
-			}			            
-			else
-			{
-				Execute-NuGet pack $projectFile -Symbols -Build -Version "$buildNumber-prerelease"
-			}
+            $projectFile = $spec.BaseName + ".csproj"		
+            
+            if ($Stable -eq "yes")
+            {
+                Execute-NuGet pack $projectFile -Symbols -Build -Version $buildNumber
+            }
+            elseif ($Development -eq "no")
+            {
+                Execute-NuGet pack $projectFile -Symbols -Build -Version "$buildNumber-prerelease"
+            }			            
+            else
+            {
+                Execute-NuGet pack $projectFile -Symbols -Build -Version "$buildNumber-prerelease"
+            }
 
             # Push the package.
             $nupkgFiles = Get-ChildItem .\*.nupkg -Recurse | Select -First 1 

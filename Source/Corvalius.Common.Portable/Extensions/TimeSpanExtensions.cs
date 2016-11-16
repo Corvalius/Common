@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace System
+namespace Corvalius
 {
     public static class TimeSpanExtensions
     {
@@ -33,7 +33,7 @@ namespace System
             return formatted;
         }
 
-        public static string ToHMSString(this TimeSpan span)
+        public static string ToHmsString(this TimeSpan span)
         {
             var hours = span.Days * 24 + span.Hours;
             var seconds = span.TotalSeconds;
@@ -61,7 +61,7 @@ namespace System
             return string.Format(finalFormat, formatted);
         }
 
-        public static string ToHMSMilliString(this TimeSpan span)
+        public static string ToHmsmString(this TimeSpan span)
         {
             var hours = span.Days * 24 + span.Hours;
             var minutes = span.Minutes;

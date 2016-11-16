@@ -8,11 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snippets", "Snippets", "{26A8E5ED-B820-4615-84FD-44436D63BDBF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63382319-5C45-4D90-80E5-A265072EF599}"
-	ProjectSection(SolutionItems) = preProject
-		Corvalius.Anubis.vsmdi = Corvalius.Anubis.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corvalius.Common.Test", "Source\Corvalius.Common.Test\Corvalius.Common.Test.csproj", "{7F81E31E-7971-4FB6-9680-0E1CE83EFB25}"
 EndProject

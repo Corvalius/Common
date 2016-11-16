@@ -5,10 +5,10 @@
     <version>$version$</version>
     <authors>Corvalius</authors>
     <owners>Corvalius</owners>
-    <projectUrl>http://hg.corvalius.com/Anubis</projectUrl>
+    <projectUrl>https://github.com/Corvalius/Common</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Corvalius Common (also known as Anubis) is a repository of interesting routines and functionality.</description>   
-    <copyright>Copyright Corvalius 2013</copyright>
+    <description>Corvalius Common is a repository of interesting routines and functionality.</description>   
+    <copyright>Copyright Corvalius 2016</copyright>
     <tags>assorted</tags>
   </metadata>
 </package>

@@ -1,4 +1,6 @@
-﻿namespace System
+﻿using System;
+
+namespace Corvalius
 {
     public static class NumericExtensions
     {
